@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+  	flex-direction: column;
+  	font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+	flex-grow: 1; 
+	flex-shrink: 0 ;
+	flex-basis: auto;
+	margin: 200px auto;
+}
+
+.container {
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: auto;
+	min-height: 100vh;
+}
+
+.wrapper {
+	max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+
+.nav_menu_wrapper {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+.nav_menu_wrapper .logo {
+	position: absolute;
+	left: 0;
+	height: 90px;
+	width: 174px;
+	background: red;
+	display: flex;
+    justify-content: center;
+}
+
+.nav_menu_wrapper .logo img {
+	margin: 15px;
+}
+
+header .wrapper {
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	padding-left: 175px;
+    box-sizing: border-box;
+}
+
+.nav_menu_wrapper .nav_menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	flex: 0 1 630px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.nav_menu_wrapper .nav_menu .list_item {
+	line-height: 50px;
+	padding-left: 15px;
+}
+
+.nav_menu_wrapper .nav_menu .list_item:last-child{
+	padding-right: 0px;
+}
+
+.sub_nav_menu_wrapper {
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.sub_nav_menu_wrapper .wrapper {
+	position: static;
+}
+
+.sub_nav_menu_wrapper .sub_nav_menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	flex: 0 1 900px;
+	font-size: 16,5px;
+	font-weight: 300;
+}
+
+.sub_nav_menu_wrapper .sub_nav_menu .list_item {
+	line-height: 40px;
+	padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.sub_nav_menu_wrapper .sub_nav_menu .list_item:last-child {
+    padding-right: 0px;
+}
+
+/*.sub_nav_menu_wrapper .sub_nav_menu:after {
+	height: 0;
+	width: 100%;
+	border-top: 2px solid black;
+    position: absolute;
+    content: "";
+}*/
+
+.other_nav_menu_wrapper .wrapper {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    box-sizing: border-box;
+}
+
+
+.search-box {
+	width: 350px;
+	height: 40px;
+	position: relative;
+}
+
+.search-box .input_icon {
+	background-image: url(./icons/icon_search.png);
+	height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 39px;
+    margin: auto;
+    left: 10;
+    top: 10px;
+}
+
+input {
+	display: block;
+    width: 100%;
+    min-height: 50px;
+    text-align: left;
+	padding-left: 40px;
+	border: 2px solid;
+	outline: none;
+	box-sizing: border-box;
+}
