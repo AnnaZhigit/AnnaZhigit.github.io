@@ -862,6 +862,9 @@ footer .contacts {
 	margin-right: 15px;
 }
 
+.contacts_list_item p {
+    width: 185px;
+}
 
 .social_box {
 	display: flex;
